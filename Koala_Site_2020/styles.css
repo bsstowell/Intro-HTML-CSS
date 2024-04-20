@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS External Stylesheet */
+			
+			
+.floatLeft {
+	float:left;
+		}
+		
+.floatRight	{
+	float:right;
+}
+
+.floatNone	{
+	float:none;
+}
+				
+.clearFix {
+	overflow:auto;
+		}
+
+			
+nav ul	{
+	list-style-type: none;
+	overflow:hidden;
+	background-color: darkslategray;
+	text-align:center;
+	padding:0px;
+		}
+			
+nav ul li {
+	float: left;
+	border-right:1px solid gray;
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration:none;
+		}
+			
+nav ul li a:active, nav ul li a:link, nav ul li a:visited {color:white;}
+			
+.floatLarry {
+	float:left;
+	border-style:groove;
+	background-color:darkslategray;
+	padding:8px;
+	margin:8px;
+		}
+			
+.floatRalph	{
+	float:right;
+	border-style:groove;
+	background-color:darkslategray;
+	padding:5px;
+	margin:5px;
+		}
+
+div ul	{
+	text-align:center;
+}
+	
+div p	{
+	text-align:center;
+}	
+
+div	{
+	font-size:20px;
+	color:white;
+		}
+		
+div a:active, div a:link, div a:visited {color:orange; font-weight:bold;}
+				
+
+	

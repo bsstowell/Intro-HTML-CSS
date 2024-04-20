@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Flexbox Example Page</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<style>
+	
+		*	{
+			box-sizing:border-box;
+		}
+		
+		#container	{
+			font-family:Comic Sans MS, cursive, sans-serif;
+			
+			background-color:indigo;
+			border-radius:40px;
+			border:4px solid black;	
+		}
+		
+		.flex-container	{
+			display:flex;
+			color:lightgray;
+			background-color:indigo;
+		}
+			
+		
+		body 	{
+			font-family:Comic Sans MS, cursive, sans-serif;
+		}
+		
+		.flex-container div	{
+			flex:1;
+		}
+		
+		
+		header	{
+			text-align:center;
+			padding:10px;
+			color:lightgray;
+			background-color:indigo;
+			border-top-left-radius:40px;
+			border-top-right-radius:40px;
+		}
+		
+		main div h1	{
+			text-align:center;	
+		}
+		
+		nav	{
+			background-color:black;
+			color:lightgray;
+			padding-top:2px;
+			padding-bottom:2px;
+		}
+		
+		nav ul	{
+			list-style:none;
+		}
+		
+		nav ul li	{
+			padding-right:20px;
+		}
+		
+		section	{
+			display:inline-block;
+		}
+		
+		.purple-square-container {
+			text-align:center;
+		}
+
+		.purple-square {
+			  width:auto;
+			  display:inline-block;
+			}
+		
+		.flex-container-nav	{
+			display:flex;
+		}
+		
+		.right-div	{
+			background-color:indigo;
+		}
+		
+		.center-section	{
+			background-color:indigo;
+		}
+		
+		.left-div	{
+			background-color:indigo;
+		}
+		
+		figure  {	
+			background-color: black;
+			padding: 20px;
+			margin: 15px;
+			width: 270px;
+			border:thick solid lightgray;
+			}
+    	
+		figcaption  {
+			font-size: 0.9em;
+			font-style: italic;
+			text-align:center;
+			}
+			
+		footer	{
+			background-color:black;
+			padding:1px;
+			padding-left:20px;
+			color:lightgray;
+			border-bottom-left-radius:40px;
+			border-bottom-right-radius:40px;
+		}
+		
+		body	{
+			background-color:gray;
+		}
+		
+		.clearFix {
+			overflow:auto;
+		}
+		
+		
+		
+		
+		@media screen and (max-width:500px) {
+		
+			body	{
+				background-color:black;
+			}
+			
+			.flex-container	{
+				flex-direction:column;
+			}
+			
+			.right-section {
+				display:none;
+			}
+			
+			.center-section {
+				display:none;
+			}
+		}
+		
+		
+	</style>
+	
+	</head>
+	
+	<body>
+		
+		<header>
+		
+			<h1>Colorado Rockies Dugout Store</h1>
+			
+		</header>
+		
+		<nav>
+			<ul class="flex-container-nav">
+				<li>Home</li>
+				<li>Products</li>
+				<li>Store</li>
+				<li>About</li>
+				<li>Contact Us</li>
+			</ul>
+		</nav>
+		
+		<main class="flex-container">
+			
+			<div class="purple-square-container">
+				<section class="left-section">
+				<div class="purple-square">
+					<figure class="clearFix">
+						<img src="rockies_jersey.jpg" height="200" width="200">
+						<figcaption>Jerseys</figcaption>
+					</figure>
+				</div>
+				</section>
+				
+				<section class="center-section">
+				<div class="purple-square">
+					<figure class="clearFix">
+						<img src="rockies_hat.jpg" height="200" width="200">
+						<figcaption>Hats</figcaption>
+					</figure>
+				</div>
+				</section>
+				
+				<section class="right-section">
+				<div class="purple-square">
+					<figure class="clearFix">
+						<img src="rockies_memorabilia.jpg" height="200" width="200">
+						<figcaption>Autographs</figcaption>
+					</figure>
+				</div>
+				</section>
+			</div>
+			
+		</main>
+		
+		<footer>
+		
+			<p>Copyright &copy; Colorado Rockies Dugout Store, MLB</p>
+		
+		</footer>
+		
+	</body>
+	
+</html>

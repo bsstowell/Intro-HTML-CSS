@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>Koala Gallery</title>
+		
+		<!--
+			Author: Brian Stowell
+			Project: Koala Bear Website
+		-->
+		
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href="structure.css" rel="stylesheet" type="text/css">
+		
+		<style>
+		
+			body { 
+				font-family: Comic Sans, Comic Sans MS, cursive; 
+			}
+	
+			h1 { 
+				padding:25px;
+				border-style:groove;
+				font-size:40px;
+				color:white;
+				background-color:orange;
+			}
+			
+			h3	{
+				background-color:white;
+				color:darkslategray;
+				text-align:center;
+				padding:10px;
+			}
+			
+			@font-face	{ 
+				font-family: "Balsamiq Sans";
+				src: "https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap";
+			}
+			
+			.balsamiq	{
+				font-family: "Balsamiq Sans";
+				text-align:center;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin:10px;
+				font-family: Arial;
+				background-color:gray;
+				}
+				
+			#wrapper  {
+			  background-color:lightblue;
+			  padding:20px;
+			  width:85%;
+			  margin: 20px auto;
+			}
+
+			.flex-container {
+			  display: flex;
+			  flex-wrap: wrap;
+			  flex-direction:row;
+			}
+
+			.flex-container > figure {
+			  border:2px solid black;
+			  padding:5px;
+			  background-color:darkslategray;
+			  width: 260px;
+			  margin: 20px auto;
+			}
+			 
+			header {
+				text-align: center;
+				padding: 15px;
+				}
+				
+			figure  {	
+				border: 2px solid black;
+				background-color: white;
+				padding: 5px;
+				margin: 15px;
+				width:260px;
+			}
+					
+			figcaption  {
+				font-size: 0.9em;
+				font-style: italic;
+				margin-bottom: 15px;
+				text-align:center;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		
+		<div id="wrapper">
+		
+		<header>
+		<p class="clearFix"><img src="images/koala_banner.jpg"></p>
+	
+		<h1 class="balsamiq">Koala Bear National Information Center</h1>
+		</header>
+		
+		<nav>
+			<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About Koalas</a></li>
+			<li><a href="save_koalas.html">Save Koalas</a></li>
+			<li><a href="adopt.html">Adopt</a></li>
+			<li><a href= "faq.html">Freqently Asked Questions</a></li>
+			<li><a href="my_koala_contact_form.html">Contact Us</a></li>
+			</ul>
+		</nav>
+			
+			<h3>Koala Bear Image Gallery</h3>
+			
+			
+			<div class="flex-container">
+			
+			<figure>
+				<img src="images/koala_gallery/koala_a.jpg">
+				<figcaption>Fiona</figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/koala_gallery/koala_b.jpg">
+				<figcaption>Debbie</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_c.jpg">
+				<figcaption>Frank</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_d.jpg">
+				<figcaption>Lip</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_e.jpg">
+				<figcaption>Ian & Mickey</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_f.jpg">
+				<figcaption>Carl</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_g.jpg">
+				<figcaption>Liam</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_h.jpg">
+				<figcaption>Monica</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_i.jpg">
+				<figcaption>Kev</figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/koala_gallery/koala_j.jpg">
+				<figcaption>"V"</figcaption>
+			</figure>
+		
+		</div>
+		
+		<footer>
+		<p>
+		Copyright &copy; 2018 All rights reserved. Australian Koala Foundation 
+		</p>
+		<br>
+		<p><img src="images/koala_logo.svg" "height=100 width=100"></p>
+		</footer>
+		
+		</div>
+		</div><!--close the containter div-->
+		
+	</body>
+</html>

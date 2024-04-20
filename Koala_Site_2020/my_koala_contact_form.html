@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Koala Contact Form</title>
+
+<!--
+			Author: Brian Stowell
+			Project: Koala Bear Website
+		-->
+		
+
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href="structure.css" rel="stylesheet" type="text/css">
+		
+<style>
+		
+	body  {
+			font-family: Comic Sans, Comic Sans MS, cursive;
+			font-size:125%;
+			color: white;
+			background-color:gray;
+			}
+			
+	form  {
+			background-color:darkslategray;
+			width: 800px;
+			margin: 10px auto;
+			padding: 20px;
+			border: 2px solid gray;
+			border-radius: 15px;
+					}
+					
+	legend  {
+			width: 100%;
+			border-bottom: 1px dotted lightblue;
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+			font-size:1.3em;
+			text-align:center;
+			}
+			
+	fieldset  {
+			width: 25em;
+			margin: 20px;
+			border:hidden;
+				}
+				
+	fieldset div  {
+			margin: 5px 0;
+					}
+					
+					
+	input, select  {
+			font-size: 1.1em;
+			padding: 2px 5px 4px;
+			border-radius: 5px;
+			margin-top:5px;
+							}
+							
+	label  {
+			width: 10em;
+			text-align: right;
+			padding-right: 0.5em;
+			}
+	
+	p.boldHeading	{
+		text-align:center;
+		font-weight:bold;
+	}
+			
+	input[type="checkbox"], input[type="radio"] {
+	  width: auto;
+	  margin-left: 10em;
+	}
+	
+	input[type="checkbox"] ~ label, input[type="radio"] ~ label {
+	  width: auto;
+	  text-align: left;
+	  padding-left: 0.4em;
+	}
+	
+			
+	input[type=submit], input[type=reset] {
+								 color:white;
+								 background-color: lightblue;
+								 border-radius: 200px;
+								 padding: 6px;
+								 width: 100px;
+								 margin-right: 30px;
+									}
+									
+	input[type=submit]  {
+						margin-left: 25px;
+						}
+						
+	textarea {
+			resize:none;
+			}
+
+	.formatLabel	{
+			display:inline-block;
+			width:150px;
+			text-align:left;
+			}
+			
+	nav ul	{
+			list-style:none;
+			background-color:darkslategray;
+			color:white;
+			padding:0px;
+				}
+			
+	nav ul li {
+			display:inline;
+			padding-right:15px;
+				}
+			
+	nav ul li a:active, nav ul li a:link, nav ul li a:visited {color:white;}
+			
+	.bannerImage	{
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				padding:10px;
+				background-color:darkslategray;
+					}
+					
+	h1 { 
+				padding:25px;
+				border-style:groove;
+				font-size:40px;
+				color:white;
+				background-color:orange;
+			}
+			
+	@font-face	{ 
+				font-family: "Balsamiq Sans";
+				src: "https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap";
+			}
+			
+	.balsamiq	{
+				font-family: "Balsamiq Sans";
+				text-align:center;
+			}
+			
+	.floatLarry	{
+				float:left;
+			}
+					
+					
+</style>
+
+</head>
+
+<body>
+
+	<div id="container">
+	
+	<header>
+	
+		<p class="clearFix"><img src="images/koala_banner.jpg" class="bannerImage"></p>
+	
+		<h1 class="balsamiq">Koala Bear National Information Center</h1>
+		
+	</header>
+	
+	<nav>
+		<ul class="flex-container-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="save_koalas.html">Save Koalas</a></li>
+			<li><a href="koala_gallery.html">Gallery</a></li>
+			<li><a href="adopt.html">Adopt</a></li>
+			<li><a href= "faq.html">Freqently Asked Questions</a></li>
+		</ul>
+	</nav>
+
+	<main>
+	
+		<div class="flex-container">
+	
+			<form id="contact_form" method="post" action="form_response_basic.php">
+				<legend>Save the Koalas</legend>
+				<p class="boldHeading" style="font-style:italic;">Please Help Us Save the Koalas - Join Our Cause!</p>
+		
+			<fieldset>
+				<div>
+					<label for="firstname" class="formatLabel">First Name</label>
+					<input id="firstname" name="firstname" type="text">
+				</div>
+			
+				<div>
+					<label for="lastname" class="formatLabel">Last Name</label>
+					<input id="lastname" name="lastname" type="text">
+				</div>
+			
+				<div>
+					<label for="emailAddress" class="formatLabel">Email Address</label>
+					<input id="emailAddress" name="emailAddress" type="text" placeholder="name@domain.com">
+				</div>
+				<br>
+			
+				<p class="boldHeading">How would you like to help?</p>
+				<br>
+				
+				<div>
+					<label for="opportunities">Ways to Help</label>            
+					<select id="opportunities" name="opportunities" style="font-size:0.9em;">
+						<option value="donate">Donate Money!</option>
+						<option value="volunteer">Volunteer</option>
+						<option value="information">Share Information</option>
+						<option value="resources">Provide Resources</option>
+					</select>
+				</div>
+				<br>
+				
+				<p class="boldHeading">I would like to help with...</p>
+		
+				<div>
+					<input type="checkbox" id="animalCare" name="animalCare" value="animal care">
+					<label for="animalCare">Animal Care</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="fundRaising" name="fundRaising" value="fundraising">
+					<label for="fundRaising">Fundraising</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="promotions" name="promotions" value="advertising">
+					<label for="promotions">Promotions</label>
+				</div>
+				<br>
+				
+				<p class="boldHeading">What is the best way to contact you?</p>
+				
+				<div>
+					<input type="radio" id="contactEmail" name="contact" value="email">
+					<label for="contactEmail">Email</label>
+				</div>
+				
+				<div>
+					<input type="radio" id="contactPhone" name="contact" value="phone">
+					<label for="contactPhone">Phone</label>
+				</div>
+				
+				<div>
+					<input type="radio" id="contactText" name="contact" value="text">
+					<label for="contactText">Text</label>
+				</div>
+				
+				<div>
+					<label for="Comments or Suggestions">Comments</label>
+					<textarea id="comments" name="comments" rows="4" cols="75" style="resize:none"></textarea>
+				</div>
+					
+			</fieldset>
+		
+			<fieldset>
+				<div>
+					<input type="submit" id="button" name="button" value="Submit">
+					<input type="reset" id="button" name="button" value="Reset">
+				</div>
+			</fieldset>
+	
+	</form><!--close form container-->
+	
+	</main>
+	
+	<footer>
+	
+	<p>Copyright &copy; 2018 All rights reserved. Australian Koala Foundation</p>
+	<br>
+	<p><img src="images/koala_logo.svg" height="100" width="100"></p>
+		
+	</footer>
+	
+</div><!--close the container div-->
+	
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

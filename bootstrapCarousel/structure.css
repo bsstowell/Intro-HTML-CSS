@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*Semantics Elements*/
+
+*	{
+		box-sizing:border-box;
+		}
+		
+		#container	{
+			width:90%;
+			margin:auto;
+			background-color:lightblue;
+		}
+		
+		header	{
+			background-color:lightgray;
+			text-align:center;
+		}
+		
+		nav		{
+			background-color:white;
+		}
+		
+		footer	{
+			color:white;
+			background-color:darkslategray;
+		}
+		
+	
+		
+
+		
+

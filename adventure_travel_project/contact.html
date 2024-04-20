@@ -1,0 +1,286 @@
+<!doctype html>
+
+
+<html>
+
+	<head>
+	
+		<title>Adventure Travel Contact Page</title>
+		
+			<!--
+			Author: Brian Stowell
+			Project: WDV101 Intro to HTML/CSS - Final Project
+			Date: August 5, 2020
+		-->
+		
+		<meta charset="UTF-8">
+		
+		<meta name="descriptions" content="Adventure Travel Contact Page">
+		
+		<meta name="keywords" content="Adventure, travel, outdoors, contact us, book trip">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+			
+	</head>
+	
+	<style>
+			
+			form  {
+					color:white;
+					background-color:royalblue;
+					width:80%;
+					margin: 10px auto;
+					padding: 20px;
+					border-radius: 15px;
+					text-align:center;
+			}
+					
+			legend  {
+					width: 100%;
+					border-bottom: 2px solid lightblue;
+					padding-bottom:10px;
+					margin-bottom: 15px;
+					font-size:1.6em;
+					text-align:center;
+			}
+							
+							
+			input, select  {
+					font-size: 1.1em;
+					padding: 2px 5px 4px;
+					border-radius: 5px;
+					margin-top:5px;
+			}
+									
+			label  {
+					width: 20em;
+					text-align:left;
+					padding-right: 0.5em;
+					font-size:20px;
+			}
+			
+			p.boldHeading	{
+				text-align:left;
+				font-weight:bold;
+				font-size:20px;
+				text-transform:uppercase;
+				width:85%;
+				color:orange;
+				padding-left:30px;
+			}
+							
+			button[type=submit], button[type=reset] {
+				color:black;
+				background-color:orange;
+				border-radius: 200px;
+				padding: 6px;
+				width: 100px;
+				margin-right: 30px;
+			}
+											
+			button[type=submit]  {
+				margin-left: 25px;
+			}
+
+			.formatLabel	{
+					display:inline-block;
+					width:40%;
+					text-align:center;
+			}
+					
+			.row	{
+				margin-left:0px;
+				margin-right:0px;
+				font-size:20px;
+				color:white;
+				background-color:lightblue;
+				padding:10px;
+			}
+			
+			.centerColumn		{
+				text-align:justify;
+				align-content:center;
+				margin-left:10px;
+				margin-right:10px;
+			}
+			
+			
+			
+	</style>
+	
+	<body>
+	
+		<div id="container">
+		
+			<header>
+			
+				<img class="img-fluid" src="images/banner.jpg" alt="Adventure Travel banner">
+			
+				<h1><b>Adventure Travel</b></h1>
+				<h3><b><i>Contact Us!</i></b></h3>
+
+			</header>
+			
+			<nav class="navbar navbar-expand-lg navbar-light">
+			  <a class="navbar-brand" href="#">- Navigation -</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="adventure_advantages.html">Adventure Advantages</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  More
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="faq.html">FAQ's</a>
+					  <a class="dropdown-item" href="destinations.html">Destinations</a>
+					  <a class="dropdown-item" href="PayPal_subscribe_buttons.html">Membership/Newsletter</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="contact.html">Contact Us</a>
+					</div>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+			
+			<main>
+			
+					<form id="contact_form" action="form_response_basic.php" method="post">
+						<legend>Join One of Our Exciting Adventures!</legend>
+						<p class="boldHeading">Enter Your Information Below to be Contacted by us...</p>
+				
+						<div class="form-group">
+							
+							<label for="firstname" class="w-75" class="formatLabel">First Name</label>
+							<input type="firstname" class="w-75" class="form-control" id="firstname" name="firstname">
+							
+						</div>
+						
+						<div class="form-group">
+							<label for="lastname" class="w-75" class="formatLabel">Last Name</label>
+							<input type="lastname" class="w-75" class="form-control" id="lastname" name="lastname">
+						</div>
+						
+						<div class="form-group">
+							<label for="emailAddress" class="w-75" class="formatLabel">Email Address</label>
+							<input type="emailAddress" class="w-75" class="form-control" id="emailAddress" name="emailAddress" placeholder="name@domain.com">
+						</div>
+							
+						<div class="form-group">
+							<label for="phoneNumber" class="w-75" class="formatLabel">Phone Number</label>
+							<input type="phoneNumber" class="w-75" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="(111) 111-1111">
+						</div>
+						<br>
+						
+							<p class="boldHeading">Which adventure are you interested in?</p>
+							
+							<div class="form-group">
+								<label for="adventures" class="w-75" class="formatLabel">Destinations</label>            
+								<select id="adventures" name="adventures" class="w-75" class="form-control" style="font-size:1.0em;">
+									<option value="Canyonlands">Utah Arches & Canyonlands Family</option>
+									<option value="Banff">Alberta Banff Hike</option>
+									<option value="Grand Canyon">AZ/UT Grand Canyon to Bryce & Zion</option>
+									<option value="Glacier">MT Glacier National Park</option>
+									<option value="Bryce">UT Bryce Canyon & Zion</option>
+									<option value="Tetons">WY/MT Tetons, Yellowstone & Glacier</option>
+									<option value="Grand Canyon">AZ Grand Canyon Family</option>
+									<option value="Yosemite">CA Yosemite Family</option>
+								</select>
+							</div>
+							<br>
+							
+							<p class="boldHeading">Adventure Activities I am interested in (check all that apply):</p>
+					
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="bikeRide">
+								<label class="form-check-label" for="bikeRide">Bike Ride</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="hike" name="hike" value="hike">
+								<label class="form-check-label" for="hike">Hike</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="kayaking" name="kayaking" value="kayaking">
+								<label class="form-check-label" for="kayaking">Kayaking</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="socialHour" name="socialHour" value="socialHour">
+								<label class="form-check-label" for="socialHour">Social Hour</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="spaServices" name="spaServices" value="spaServices">
+								<label class="form-check-label" for="spaServices">Spa Services</label>
+							</div>
+							<br>
+							
+							<p class="boldHeading">What is the best way to contact you?</p>
+							
+							<div class="form-group form-check">
+								<input type="radio" class="form-check-input" id="contactEmail" name="contact" value="email">
+								<label class="form-check-label" for="contactEmail">Email</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="radio" class="form-check-input" id="contactPhone" name="contact" value="phone">
+								<label class="form-check-label" for="contactPhone">Phone</label>
+							</div>
+							
+							<div class="form-group form-check">
+								<input type="radio" class="form-check-input" id="contactText" name="contact" value="text">
+								<label class="form-check-label" for="contactText">Text</label>
+							</div>
+							
+							<div class="form-group">
+							<br>
+								<label for="Comments or Suggestions" class="formatLabel" class="w-50">Comments or Suggestions</label>
+								<textarea id="comments" class="w-75 p-3" name="comments" class="form-control"> </textarea>
+							</div>
+					
+							<div>
+								<button type="submit" class="btn btn-info mb-2">Submit</button>
+							
+								<button type="reset" class="btn btn-info mb-2">Reset</button>
+							</div>
+				
+					</form><!--close form container-->	
+			
+			</main>
+			
+			<footer class="align-self-center">
+			
+				<p>Copyright &copy; 2020 All rights reserved. Adventure Travel, LLC.</p>
+				<p class="clearFix"><img src="images/AT_logo.gif" width="100" height="100" alt="Adventure Travel logo"></p>
+				
+			</footer>
+			
+			
+		</div>	<!-- end page container -->
+			
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+	</body>
+	
+</html>

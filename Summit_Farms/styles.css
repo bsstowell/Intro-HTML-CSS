@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS External Stylesheet */
+
+.clearFix {
+	overflow:auto;
+		}
+		
+.floatRight	{
+	float:right;
+}
+
+.floatLeft	{
+	float:left;
+}
+		
+nav ul	{
+	list-style-type: none;
+	overflow:hidden;
+	background-color:lightslategray;
+	text-align:center;
+	border-style:groove;
+	margin:20px;
+	padding:0px;
+				}
+
+nav ul li {
+	float:left;
+	border-right: 1px solid white;
+				}
+
+li a {
+	display:block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration:none;
+				}
+
+li a:hover {
+	background-color:steelblue;
+				}
+
+body	{
+	background-color:powderblue;
+}
+
+h1 { 
+	margin:20px;
+	padding:20px;
+	border-style:groove;
+	font-size:40px;
+	color:white;
+	background-color:darkslategray;
+			}
+			
+div	{
+	text-align:center;
+	border-style:groove;
+	margin:20px;
+	padding:10px;
+	background-color:royalblue;
+	color:white;
+	font-size:20px;
+}
+
+
+div::first-line	{
+	color: black;
+	font-size:25px;
+	font-weight:bold;
+}
+
+p	{
+	background-color:darkslategray;
+	color:white;
+	font-size:20px;
+	border-style:groove;
+	padding:15px;
+	margin:20px;
+}
+
+h3, p li	{
+	background-color:lightslategray;
+	color:white;
+	font-size:20px;
+	border-style:groove;
+	padding:15px;
+	margin:20px;
+}
+
+p.colorChange	{
+	background-color:lightslategray;
+	color:white;
+	font-size:20px;
+	border-style:groove;
+	padding:15px;
+	margin:20px;
+}
